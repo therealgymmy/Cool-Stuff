@@ -1,0 +1,10 @@
+So I decided to actually code up some random, weird stuff I've come across in C++.
+Turned out there are a lot of cool things you can do with the language and
+some really interesting behaviours.
+
+If you like, you can use the source code however you want to.
+(I doubt anyone'd find it useful tho...)
+
+There is a makefile in every folder.
+Note: Some code is intentionally made unable to compile in order to
+      illustrate some interesting point.
