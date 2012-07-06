@@ -10,7 +10,7 @@ class Surrogate {
 public:
     Surrogate(Fcn1 *f1, Fcn2 *f2) : f1_(f1), f2_(f2) {}
 
-    // Overloaded operators.
+    // Implicit conversion operators
     operator Fcn1*() { return f1_; }
     operator Fcn2*() { return f2_; }
 
