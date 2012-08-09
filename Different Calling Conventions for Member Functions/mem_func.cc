@@ -1,3 +1,5 @@
+// Demonstrates the different behaviors of different calling (Different binding).
+
 #include <iostream>
 
 class Base {
@@ -53,10 +55,13 @@ int main (void) {
     Base *b2 = new Derived();
     b2->cMethod();      // Derived::cMethod()
     (*b2).cMethod();    // Derived::cMethod()
+
+    // Highlight..
+    b2->Base::cMethod();// Base::cMethod()
     (b2->*(&Base::cMethod))();  // Derived::cMethod()
     void (Base::*func)() = &Base::cMethod;
     (b2->*func)();      // Derived::cMethod()
-    b2->Base::cMethod();// Base::cMethod()
+    //
 
     foo(*b2);           // Derived::cMethod()
     foo(b1);            // Base::cMethod()
