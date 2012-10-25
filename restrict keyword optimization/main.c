@@ -1,5 +1,5 @@
 // refer to my blog post:
-// http://beyondsora.wordpress.com/2012/10/16/restrict-keyword/
+// http://beyondsora.wordpress.com/2012/10/17/restrict-keyword/
 
 #include <stdint.h>
 #include <stdio.h>
