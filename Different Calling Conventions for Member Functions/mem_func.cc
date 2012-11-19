@@ -29,7 +29,8 @@ void foo2 (Derived d)
     d.bMethod();
 }
 
-int main (void) {
+int main ()
+{
     Base *b = new Derived();
     b->aMethod();       // Base::aMethod()
     b->bMethod();       // Derived::bMethod()
