@@ -12,16 +12,6 @@ y = ->(f) {
   ->(x) { f.(->(v) { x.(x).(v) }) } )
 }
 
-y = ->(f) {
-  ->(x) {
-    f.(->(v) { x.(x).(v) })
-  }.(
-    ->(x) {
-      f.(->(v) { x.(x).(v) })
-    }
-  )
-}
-
 # Function y calculates the fixpoint of a function.
 fact = y.(fact_improver)
 
