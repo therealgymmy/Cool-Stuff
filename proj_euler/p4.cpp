@@ -46,7 +46,7 @@ int main() {
         );
     tie(ignore, i, j) = *itr_pal_group;
     cout << "Palindrome = " << *itr_pal
-         << ", i = " << i
-         << ", j = " << j
+         << ", i = "        << i
+         << ", j = "        << j
          << endl;
 }
